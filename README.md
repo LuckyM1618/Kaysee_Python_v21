@@ -1,0 +1,1 @@
+Initializing Repository for Python v21.1 course with Instructor Kaysee, Instructor Nick, TA Robert, and TA Lucky
