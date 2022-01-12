@@ -52,13 +52,13 @@
 # print(gt_second([5,2,3,2,1,4]))
 # print(gt_second([3]))
 
-# 5. This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value
-def this_len_that_val(size, val):
-    val_list = []
-    for i in range(size):
-        val_list.append(val)
+# # 5. This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value
+# def this_len_that_val(size, val):
+#     val_list = []
+#     for i in range(size):
+#         val_list.append(val)
 
-    return val_list
+#     return val_list
 
-print(this_len_that_val(4,7))
-print(this_len_that_val(6,2))
+# print(this_len_that_val(4,7))
+# print(this_len_that_val(6,2))
