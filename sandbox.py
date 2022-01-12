@@ -1,7 +1,8 @@
-fav_num = 13
+x = 8
 
-# concatenating with a comma will add a space and type cast if necessary
-print("My favorite num is", fav_num)
-
-# concatenating with a + will not add a space or type cast
-print("My favorite num is {}".format(fav_num))
+if x > 20:
+    print("Greater than 20")
+elif x <= 20 and x >= 10:
+    print("Between 10 and 20 (inclusive)")
+else:
+    print("Less than 10")
