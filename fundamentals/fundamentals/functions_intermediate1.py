@@ -35,30 +35,30 @@
 # Create a function iterateDictionary(some_list) that, given a list of dictionaries, the function loops through each dictionary in the list and prints each key and the associated value
 
 # ***note: students list is used for questions 2 and 3. Be careful not to comment out this code when testing only question 3
-students = [
-         {'first_name':  'Michael', 'last_name' : 'Jordan'},
-         {'first_name' : 'John', 'last_name' : 'Rosales'},
-         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
-         {'first_name' : 'KB', 'last_name' : 'Tonel'}
-    ]
+# students = [
+#          {'first_name':  'Michael', 'last_name' : 'Jordan'},
+#          {'first_name' : 'John', 'last_name' : 'Rosales'},
+#          {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+#          {'first_name' : 'KB', 'last_name' : 'Tonel'}
+#     ]
 
-def iterateDictionary(students):
-    for element in students:
-        output_str = ""
-        comma = True
+# def iterateDictionary(students):
+#     for element in students:
+#         output_str = ""
+#         comma = True
 
-        for key,val in element.items():
-            output_str += key + " - " + val
+#         for key,val in element.items():
+#             output_str += key + " - " + val
 
-            if comma:
-                output_str += ", "
-                comma = False
-            else:
-                comma = True
+#             if comma:
+#                 output_str += ", "
+#                 comma = False
+#             else:
+#                 comma = True
 
-        print(output_str)
+#         print(output_str)
 
-iterateDictionary(students)
+# iterateDictionary(students)
 
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
 # bonus to get them to appear exactly as below!)
@@ -68,10 +68,17 @@ iterateDictionary(students)
 # first_name - Mark, last_name - Guillen
 # first_name - KB, last_name - Tonel
 
-# - 3. - #
-# Get Values From a List of Dictionaries
-# Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary.
+# # - 3. - #
+# # Get Values From a List of Dictionaries
+# # Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary.
 
-def iterateDictionary2(key_name, some_list):
-    pass
-    # need to review navigating dictionaries to see if direct/effecient method or function exists 
+# def iterateDictionary2(key_name, some_list):
+#     for i in some_list:
+#         print(i[key_name])
+
+# iterateDictionary2('first_name', students)
+# iterateDictionary2('last_name', students)
+
+# - 4 - #
+# Iterate Through a Dictionary with List Values
+# Create a function printInfo(some_dict) that, given a dictionary whose values are lists, prints the name of each key along with the size of its list, and then prints the associated values within each key's list.
