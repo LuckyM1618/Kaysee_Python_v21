@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+th, td {
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    text-align: left;
+}
