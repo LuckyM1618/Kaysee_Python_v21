@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    margin: auto center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.red_box {
+    height: 50px;
+    width: 50px;
+    background-color: {{ color1 }};
+}
+
+.black_box {
+    height: 50px;
+    width: 50px;
+    /* background-color: {{ color2 }}; */
+    background-color: black;
+}
