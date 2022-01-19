@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Results Online</h2>
+    <h2>{{ session['name'] }}</h2>
+    <h2>{{ session['dojo_loc'] }}</h2>
+    <h2>{{ session['fav_lang'] }}</h2>
+    <h2>{{ session['comment'] }}</h2> -->
+
+    <div class="container">
+        <div class="left_justified_row">
+            <h2>Submitted Info:</h2>
+        </div>
+
+        <div class="row_container">
+            <div class="form_row">
+                <p>Name:</p>
+                <p>{{ session['name'] }}</p>
+            </div>
+
+            <div class="form_row">
+                <p>Dojo Location:</p>
+                <p>{{ session['dojo_loc'] }}</p>
+            </div>
+
+            <div class="form_row">
+                <p>Favorite Language:</p>
+                <p>{{ session['fav_lang'] }}</p>
+            </div>
+
+            <div class="form_row">
+                <p>Comment:</p>
+                <p>{{ session['comment'] }}</p>
+            </div>
+        </div>
+
+        <div class="right_justified_row">
+            <form action="/"><input type="submit" value="Go Back"></form>
+        </div>
+    </div>
+</body>
+</html>
