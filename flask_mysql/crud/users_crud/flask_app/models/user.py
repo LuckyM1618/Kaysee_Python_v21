@@ -1,5 +1,5 @@
 # import the function that will return an instance of a connection
-from mysqlconnection import connectToMySQL
+from flask_app.config.mysqlconnection import connectToMySQL
 
 
 # model the class after the user table from our database
@@ -29,10 +29,32 @@ class User:
 
         return users
 
+    @classmethod
+    def get_one(cls, data):
+        query = "SELECT * FROM users WHERE id = %(id_num)s"
+
+        results = connectToMySQL('users_schema').query_db( query, data )
+        user = results[0]
+
+        return user
+
+
     # class method to save our user to the database
     @classmethod
-    def save(cls, data ):
+    def save(cls, data):
         query = "INSERT INTO users ( first_name , last_name , email , created_at, updated_at ) VALUES ( %(first_name)s , %(last_name)s , %(email)s , NOW() , NOW() );"
         # data is a dictionary that will be passed into the save method from server.py
+
+        return connectToMySQL('users_schema').query_db( query, data )
+
+    @classmethod
+    def update(cls, data):
+        query = "UPDATE users SET first_name = %(first_name)s, last_name = %(last_name)s, email = %(email)s , updated_at = NOW() WHERE id = %(id)s"
+
+        return connectToMySQL('users_schema').query_db( query, data )
+
+    @classmethod
+    def delete(cls, data):
+        query = "DELETE FROM users WHERE id = %(id)s"
 
         return connectToMySQL('users_schema').query_db( query, data )
