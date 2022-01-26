@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#all_dojos_container {
+    min-height: 700px;
+    width: 900px;
+    margin: auto center;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#all_dojos_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    min-height: 100px;
+    width: 250px;
+
+    box-sizing: border-box;
+}
+
+#dojo_list_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 5px;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
