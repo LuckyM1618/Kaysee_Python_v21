@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- If using Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Great Number Game</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h2>Welcome to the Great Number Game!</h2>
+        <h4>I am thinking of a number between 1 and 100</h4>
+
+        <div class='container p-3 text-center text-warning bg-dark rounded' style="width: 250px;">
+            <form action="/process_guess" method="post">
+                    <h5 class="text-center">Take a Guess</h5>
+                    <input class="mb-2 mx-auto row" type="number" name="correct_answer">
+                    <button type="submit" class="btn btn-warning mx-auto row">Guess</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

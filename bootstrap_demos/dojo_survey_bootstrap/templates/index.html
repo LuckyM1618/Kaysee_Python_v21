@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- If using Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container bg-dark mx-auto my-5 p-3 rounded" style="width: 400px;">
+        <h2 class="text-warning">Dojo Survey</h2>
+
+        <form action="/show_results">
+            <label class="text-light" for="name">Name: </label>
+            <input class="col-12 mb-2" type="text" name="name" id="name">
+
+            <label class="text-light" for="dojo_loc">Dojo: </label>
+            <select class="col-12 mb-2" name="dojo_loc" id="dojo_loc">
+                <option value="Bellevue">Bellevue</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Chicago">Chicago</option>
+            </select>
+
+            <label class="text-light" for="fav_lang">Favorite Language: </label>
+            <select class="col-12 mb-2" name="fav_lang" id="fav_lang">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+            </select>
+
+            <div class="form-group">
+                <label class="text-light" for="comments">Comments: </label>
+                <textarea  class="col-12" name="comments" id="comments" rows="5"></textarea>
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+</html>
