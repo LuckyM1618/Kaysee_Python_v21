@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- If using Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container bg-dark mx-auto my-5 p-3 rounded" style="width: 450px;">
+        <h2 class="text-warning">Submitted Info:</h2>
+
+        <div class="row mb-2">
+            <h5 class="col-6 text-left text-light">Name: </h5>
+            <h5 class="col-6 text-right text-light text-wrap" style="word-break: break-word;">{{ session['name'] }}</h5>
+        </div>
+
+        <div class="row mb-2">
+            <h5 class="col-6 text-left text-light">Dojo Location: </h5>
+            <h5 class="col-6 text-right text-light">{{ session['dojo_loc'] }}</h5>
+        </div>
+
+        <div class="row mb-2">
+            <h5 class="col-6 text-left text-light">Favorite Language: </h5>
+            <h5 class="col-6 text-right text-light">{{ session['fav_lang'] }}</h5>
+        </div>
+
+        <div class="row mb-2">
+            <h5 class="col-6 text-left text-light">Comments: </h5>
+            <h5 class="col-6 text-right text-wrap text-light" style="word-break: break-word;">{{ session['comments'] }}</h5>
+        </div>
+    </div>
+</body>
+</html>
