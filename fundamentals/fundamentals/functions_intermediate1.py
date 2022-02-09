@@ -68,9 +68,9 @@
 # first_name - Mark, last_name - Guillen
 # first_name - KB, last_name - Tonel
 
-# # - 3. - #
-# # Get Values From a List of Dictionaries
-# # Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary.
+# - 3. - #
+# Get Values From a List of Dictionaries
+# Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary.
 
 # def iterateDictionary2(key_name, some_list):
 #     for i in some_list:
