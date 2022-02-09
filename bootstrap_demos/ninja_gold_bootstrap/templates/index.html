@@ -10,14 +10,16 @@
 </head>
 <body>
     <div class="container p-0 text-center">
-        <h2 class='text-warning'>Ninja Gold</h2>
-        <div class="row">
-            <p class="text-left mr-2">Your Gold: </p>
-            <p class="col-1 text-left border border-dark px-1">{{ session['current_gold'] }}</p>
+        <h2 class='text-warning mt-3'>Ninja Gold</h2>
+        <div class="row mb-2">
+            <p class="text-left mr-2 my-auto">Your Gold: </p>
+            <p class="col-1 my-auto px-1 text-left border border-dark">{{ session['current_gold'] }}</p>
+
+            <form action="/reset"><input class="ml-3 my-auto btn btn-sm btn-danger" type="submit" value="Reset"></form>
         </div>
 
         <div class="row d-flex justify-content-between mb-3">
-            <form class="d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
+            <form class="mb-2 d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
                 <h4>Farm</h4>
                 <p>(earns 10-20 gold)</p>
 
@@ -25,7 +27,7 @@
                 <input class="btn btn-warning" type="submit" value="Find Gold!">
             </form>
 
-            <form class="d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
+            <form class="mb-2 d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
                 <h4>Cave</h4>
                 <p>(earns 5-10 gold)</p>
 
@@ -33,7 +35,7 @@
                 <input class="btn btn-warning" type="submit" value="Find Gold!">
             </form>
 
-            <form class="d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
+            <form class="mb-2 d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
                 <h4>House</h4>
                 <p>(earns 2-5 gold)</p>
 
@@ -41,7 +43,7 @@
                 <input class="btn btn-warning" type="submit" value="Find Gold!">
             </form>
 
-            <form class="d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
+            <form class="mb-2 d-flex flex-column align-items-center justify-content-center border border-dark" style="height: 200px; width: 200px;" action="/process_money" method="post" >
                 <h4>Casino</h4>
                 <p>(earns/takes 0-50 gold)</p>
 
