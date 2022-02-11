@@ -7,13 +7,13 @@
 # ========================================================================= #
 
 # # 1. Countdown - Create a function that accepts a number as an input. Return a new list that counts down by one, from that number (as the 0th element) down to 0 (as the last element)
-# def countdown(start_val):
-#     new_list = []
-#     # negatively iterating for loop; end value passed to range is -1 to be inclusive of 0
-#     for i in range(start_val, -1, -1):
-#         new_list.append(i)
+def countdown(start_val):
+    new_list = []
+    # negatively iterating for loop; end value passed to range is -1 to be inclusive of 0
+    for i in range(start_val, -1, -1):
+        new_list.append(i)
     
-#     return new_list
+    return new_list
 
 # print(countdown(5))
 

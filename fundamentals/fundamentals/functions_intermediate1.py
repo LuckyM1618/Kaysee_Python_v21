@@ -36,10 +36,10 @@
 
 # ***note: students list is used for questions 2 and 3. Be careful not to comment out this code when testing only question 3
 # students = [
-#          {'first_name':  'Michael', 'last_name' : 'Jordan'},
-#          {'first_name' : 'John', 'last_name' : 'Rosales'},
-#          {'first_name' : 'Mark', 'last_name' : 'Guillen'},
-#          {'first_name' : 'KB', 'last_name' : 'Tonel'}
+#         {'first_name':  'Michael', 'last_name' : 'Jordan'},
+#         {'first_name' : 'John', 'last_name' : 'Rosales'},
+#         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+#         {'first_name' : 'KB', 'last_name' : 'Tonel'}
 #     ]
 
 # def iterateDictionary(students):
@@ -87,15 +87,29 @@ dojo = {
    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 
-def printInfo(dojo):
-    for key in dojo.keys():
-        print(len(dojo[key]), key.capitalize())
-        for i in dojo[key]:
-            print(i)
+# def printInfo(dojo):
+#     for key in dojo.keys():
+#         print(len(dojo[key]), key.capitalize())
+#         for i in dojo[key]:
+#             print(i)
 
-        print("")
+#         print("")
 
-printInfo(dojo)
+# printInfo(dojo)
+
+class Dojo:
+    def __init__(self, location, instructors):
+        self.location = location
+        self.instructors = instructors
+
+    def change_loc(self, new_loc):
+        self.location = new_loc
+
+test_dojo = Dojo("Seattle", ["Mike", "Nichole", "Ryan"])
+
+print(test_dojo.location)
+test_dojo.change_loc("San Diego")
+print(test_dojo.location)
 
 # Example Output:
 # 7 LOCATIONS
