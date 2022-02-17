@@ -1,44 +1,38 @@
-// Create a function that returns as boolean of true/false for whether or not an input string is a strict pallindrome. Do not ignore whitespaces, casing matters!!
+// reverseString(str) - takes in one argument, a String. return that String, Reversed
+// "Hello, world!" becomes "!dlrow ,olleH"
+// do this without turning the string into an array - there's no need!
 
-// Example 1: "racecar" --> true
-// Example 2: "Dud" --> false
-// Example 3: "oho!" --> false
+function reverseString(str) {
+    var output = "";
 
-// pallidrome = reads the same forwards and back!
-// loop through our string
-// check each element with it's 'sister' element on the other side of the string
-// if elements don't match then return false
-// if we make it through our loop and never hit false, then return true
-
-function isPallindrome(str) {
-    for(let i = 0; i < str.length / 2; i++) {
-        if(!(str[i]===str[str.length - 1 - i])) {
-            return false;
-        }
+    for(var i = str.length - 1; i >= 0; i--) {
+        output += str[i];
     }
-    return true;
+
+    return output;
 }
 
-console.log(isPallindrome("racecar")); // true
-console.log(isPallindrome("e tacocat e")); // true
-console.log(isPallindrome("Dud")); // false
-console.log(isPallindrome("oho!")); // false
-console.log(isPallindrome(" to ")); // false
+console.log(reverseString("Hello") == "olleH");
+console.log(reverseString("12345") == "54321");
+console.log(reverseString("I like to pet cats!") == "!stac tep ot ekil I");
 
-// Given a String, return the longest pallindromic substring. Given "hello dada", return "dad". Given "not much" return "n". Include spaces as well!
+// createAcronym(str) - takes in one argument, a string to create an acronym from (str).
+// an acronym is a word made up of a letter from the start of each word of a phrase.
+// do this also without turning the string into an array - it's not necessary.
+// try to capitalize each letter as well, but if you don't it's not critical -
+// easy to do afterwards
+// "I like to pet cats!" should result in "ILTPC"
 
-// Example 1: "my favorite racecar erupted" --> "e racecar e"
-// Example 2: "nada" --> "ada"
-// Example 3: "nothing to see" --> "ee"
+function createAcronym(str) {
 
-function longestPallindrome(str) {
-    var offset = 0;
-    var maxLength = str.length;
-    found = false;
-
-    while()
 }
 
-// console.log(longestPallindrome("my favorite racecar erupted"));
-// console.log(longestPallindrome("nada"));
-// console.log(longestPallindrome("nothing to see"));
+console.log(createAcronym("I like to pet cats!"))
+console.log(createAcronym("I  like   to pet  cats!"))
+console.log(createAcronym("   I  like   to pet  cats!"))
+
+// write some test cases yourself! try and break it.
+// bonus: can you create a second version that skips words like "by", "of", etc?
+// "light amplification by stimulated emission of radiation" - "laser", "labseor"
+// note - you may need to turn the string into an array using some built-ins to
+// do this efficiently... but you don't have to
