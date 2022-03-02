@@ -43,13 +43,13 @@ class User:
         for i in range(len(self.accounts)):
             print(f"Balance: {100 * self.accounts[i].int_rate}, Balance: ${self.accounts[i].balance}")
 
-# ed = User("Edward Elric", "fullmetalalchemist@amestris.gov")
-# al = User("Alphonse Elric", "aelric@rockbellautomail.com")
-# winry = User("Winry Rockbell", "wrockbell@rockbellautomail.com")
+ed = User("Edward Elric", "fullmetalalchemist@amestris.gov")
+al = User("Alphonse Elric", "aelric@rockbellautomail.com")
+winry = User("Winry Rockbell", "wrockbell@rockbellautomail.com")
 
-# ed.make_deposit(250).make_deposit(350).make_deposit(500).make_withdrawl(42).display_user_balance()
-# winry.make_deposit(1250).make_deposit(2500).make_withdrawl(500).make_withdrawl(367).display_user_balance()
-# al.make_deposit(250).make_withdrawl(25).make_withdrawl(15).make_withdrawl(100).display_user_balance()
+ed.make_deposit(250).make_deposit(350).make_deposit(500).make_withdrawl(42).display_user_balance()
+winry.make_deposit(1250).make_deposit(2500).make_withdrawl(500).make_withdrawl(367).display_user_balance()
+al.make_deposit(250).make_withdrawl(25).make_withdrawl(15).make_withdrawl(100).display_user_balance()
 
 ed = User("Edward Elric", "fullmetalalchemist@amestris.gov", 3)
 al = User("Alphonse Elric", "aelric@rockbellautomail.com", 1)
